@@ -5,7 +5,7 @@
             <value>New Event</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="mixer">
             <destination>{577a6974-09b8-499c-acdd-fe7594989df8}</destination>
@@ -50,7 +50,7 @@
             <destination>{afb2625b-473b-4635-87de-440e865889d4}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{fa0b193f-7ede-40e1-b4df-ee9c0f58f418}</destination>
+            <destination>{d733355f-c556-4d88-b1a3-5eeffded72ce}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{ef48bc3d-26e5-447b-8ce0-ad37fe3ca64f}"/>
@@ -95,7 +95,7 @@
     <object class="MixerBusEffectChain" id="{0c62c0ec-1312-4f77-968d-82c9366c456d}">
         <relationship name="effects">
             <destination>{551e3d3c-892d-4521-ae08-c060c4f3c91c}</destination>
-            <destination>{ad4dac51-0cec-4c71-bae3-2fc435ad8a29}</destination>
+            <destination>{f06371fe-5dda-49fc-9ab3-9a9ec28ea7c7}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{d51b269a-fc32-41d3-a357-3aefe99cf188}"/>
@@ -107,6 +107,68 @@
     </object>
     <object class="MixerBusPanner" id="{74cb68da-b346-4306-b763-f03ec3d4cc47}"/>
     <object class="MixerBusFader" id="{551e3d3c-892d-4521-ae08-c060c4f3c91c}"/>
-    <object class="SpatialiserEffect" id="{ad4dac51-0cec-4c71-bae3-2fc435ad8a29}"/>
+    <object class="PluginEffect" id="{f06371fe-5dda-49fc-9ab3-9a9ec28ea7c7}">
+        <relationship name="plugin">
+            <destination>{ed560cf3-083c-4bcd-b298-4d12b5a71b97}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{429e56b0-b539-454b-9b74-a3eedf779613}"/>
+    <object class="Plugin" id="{ed560cf3-083c-4bcd-b298-4d12b5a71b97}">
+        <property name="identifier">
+            <value>Oculus Spatializer</value>
+        </property>
+        <relationship name="pluginParameters">
+            <destination>{c8864217-8e19-44c3-887f-8fc413d709a3}</destination>
+            <destination>{860778bb-2bcf-4a08-970c-35496cc61556}</destination>
+            <destination>{23a9cbf7-0b53-4214-b217-c2d9996b8da7}</destination>
+            <destination>{d8d8535c-1456-44ac-8964-c68456d151c2}</destination>
+            <destination>{d063ddb1-17c2-4545-8f8c-19dfaab5e10e}</destination>
+        </relationship>
+    </object>
+    <object class="DataPluginParameter" id="{c8864217-8e19-44c3-887f-8fc413d709a3}">
+        <property name="name">
+            <value>3D Attributes</value>
+        </property>
+        <property name="dataType">
+            <value>-2</value>
+        </property>
+    </object>
+    <object class="BoolPluginParameter" id="{860778bb-2bcf-4a08-970c-35496cc61556}">
+        <property name="name">
+            <value>Reflections</value>
+        </property>
+        <property name="value">
+            <value>true</value>
+        </property>
+    </object>
+    <object class="BoolPluginParameter" id="{23a9cbf7-0b53-4214-b217-c2d9996b8da7}">
+        <property name="name">
+            <value>Attenuation</value>
+        </property>
+        <property name="value">
+            <value>true</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{d8d8535c-1456-44ac-8964-c68456d151c2}">
+        <property name="name">
+            <value>Range Min</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
+        </property>
+        <property name="value">
+            <value>1</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{d063ddb1-17c2-4545-8f8c-19dfaab5e10e}">
+        <property name="name">
+            <value>Range Max</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
+        </property>
+        <property name="value">
+            <value>100</value>
+        </property>
+    </object>
 </objects>
