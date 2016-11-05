@@ -29,62 +29,49 @@
 [LOG] Profile::init                            : Profiler listening on port: 9264
 [LOG] Manager::readBank                        : fileversion = 80, compatVersion = 70 (oldest = 44, newest = 80)
 [LOG] Manager::readBank                        : fileversion = 80, compatVersion = 70 (oldest = 44, newest = 80)
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[ERR] RuntimeBankModel::initPluginEffects      : DSP plugin returned an error, bank will not load properly.
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
-[WRN] ObjectLookup::get                        : Lookup failed for BusModel: {fa0b193f-7ede-40e1-b4df-ee9c0f58f418}
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SystemI::createSound                     : filename = FMODFiles\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Initializing FMOD nonblocking thread (0).  priority 1
+[LOG] Thread::initThread                       : - Stacksize 81920.  Stack pointer 0000000000000000 : usesemaphore = 1 : sleeptime = 0
+[LOG] Thread::callback                         : * FMOD nonblocking thread (0) started
+[LOG] SystemI::createSound                     : setdata soundi = 000000000E048FD8 : node = 0000000015C96510
+[LOG] SystemI::createSound                     : add node to async list : head = 00000000283443E8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000000E048FD8
+[LOG] SystemI::createSoundInternal             :     filename = FMODFiles\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 400928
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10592
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000015C96628
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Format has 1 subsounds.
+[LOG] SystemI::createSoundInternal             :     Create as FMOD_CREATESTREAM
+[LOG] System::createSoundInternal              :     decode buffersize = 19200 : blocksize = 256 : format = 2
+[LOG] SystemI::createSample                    :     mode 02010082 length 19200 samples, lengthbytes 400704
+[LOG] SystemI::createSample                    :     channels = 1
+[LOG] SystemI::createSample                    :     output = 000000003683EFF8
+[LOG] OutputSoftware::createSample             :     lengthpcm 19200, lengthbytes 400704, channels 1, format 2, freq 48000, mode 0201008a
+[LOG] System::createSoundInternal              :     1 subsounds detected.
+[LOG] System::createSoundInternal              :     Seek stream to start
+[LOG] System::createSoundInternal              :     flush stream buffer
+[LOG] System::createSoundInternal              :     flush successful.
+[LOG] System::createSoundInternal              :     switch file handle from small blocking single buffered to large nonblocking doublebuffered.
+[LOG] Thread::initThread                       :         Initializing FMOD file thread.  priority 1
+[LOG] Thread::initThread                       :         - Stacksize 16384.  Stack pointer 0000000000000000 : usesemaphore = 0 : sleeptime = 10
+[LOG] Thread::callback                         :         * FMOD file thread started
+[LOG] SystemI::createSoundInternal             :     done.  OpenState now = FMOD_OPENSTATE_READY.
+
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000000E048FD8
+[LOG] SoundI::getSubSound                      : sound 000000000E048FD8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : body_movement_through_bushes_03 (000000000E048FD8)
+[LOG] SoundI::release                          : remove stream samples. (000000000E048FD8)
+[LOG] SoundI::release                          :     body_movement_through_bushes_03 (00000000280F8D78)
+[LOG] SoundI::release                          : release subsounds. (000000000E048FD8)
+[LOG] SoundI::release                          :     body_movement_through_bushes_03 (0000000022C17438)
+[LOG] SoundI::release                          : release codec. (000000000E048FD8)
 [LOG] Thread::callback                         : * FMOD Studio update thread finished
 [LOG] Thread::close                            : FMOD Studio update thread thread destroyed
 [LOG] Thread::callback                         : * FMOD Studio bank load thread finished
@@ -106,5 +93,9 @@
 [LOG] SystemI::close                           : Free software output.
 [LOG] SystemI::close                           : Free emulated output.
 [LOG] SystemI::close                           : Free channel pool.
+[LOG] Thread::callback                         : * FMOD nonblocking thread (0) finished
+[LOG] Thread::close                            : FMOD nonblocking thread (0) thread destroyed
+[LOG] Thread::callback                         : * FMOD file thread finished
+[LOG] Thread::close                            : FMOD file thread thread destroyed
 [LOG] SystemI::close                           : done.
 
