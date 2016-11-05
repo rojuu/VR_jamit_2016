@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{1aa82a12-9d50-40f5-83d2-44da2c72277a}">
+        <property name="assetPath">
+            <value>creepy_blood_squish_slimy_04.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>6.3040000000000003</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{81657de7-b1f3-48b5-ba61-9bf16251a5b3}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -40,6 +40,7 @@ GameObject:
   - 135: {fileID: 135000013189816926}
   - 114: {fileID: 114000014059835810}
   - 114: {fileID: 114000014093560602}
+  - 114: {fileID: 114000010206910884}
   m_Layer: 0
   m_Name: pikkunen
   m_TagString: Untagged
@@ -144,6 +145,28 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114000010206910884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011963319650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/LittleOnes_Pickup
+  PlayEvent: 2
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!114 &114000014059835810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Character/LittleOnes
+  Event: event:/SFX/LittleOnes_Noise
   PlayEvent: 1
   StopEvent: 2
   CollisionTag: 
