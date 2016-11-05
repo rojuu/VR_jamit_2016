@@ -30,7 +30,7 @@ public class GlobalVars
         set { childCount = value; }
     }
 
-    private int childMax;
+    private int childMax = 5;
     public int ChildMax
     {
         get { return childMax; }
