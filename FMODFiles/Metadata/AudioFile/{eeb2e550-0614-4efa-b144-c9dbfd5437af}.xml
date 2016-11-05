@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{eeb2e550-0614-4efa-b144-c9dbfd5437af}">
+        <property name="assetPath">
+            <value>creepy_drone_01.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>45.055999999999997</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{81657de7-b1f3-48b5-ba61-9bf16251a5b3}</destination>
+        </relationship>
+    </object>
+</objects>
