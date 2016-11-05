@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{05762c5e-4baa-479a-84d4-85de5815ed04}">
+        <property name="assetPath">
+            <value>ambient_light_wind_through_trees_with_birds_01_lp.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>73.941083333333339</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{81657de7-b1f3-48b5-ba61-9bf16251a5b3}</destination>
+        </relationship>
+    </object>
+</objects>

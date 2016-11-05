@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{b85fbaa3-4ef7-4ff8-9069-aac3b4b5d77d}">
         <property name="name">
-            <value>sfx</value>
+            <value>Bushes</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -32,7 +32,7 @@
             <destination>{a5f3c37b-6e92-4927-a236-33fe7b4ba6ff}</destination>
         </relationship>
         <relationship name="folder">
-            <destination>{018e9278-a320-44ce-a97b-00cb324ca75d}</destination>
+            <destination>{88c2dcd6-17f2-4736-b071-d091418efd79}</destination>
         </relationship>
     </object>
     <object class="EventMixer" id="{577a6974-09b8-499c-acdd-fe7594989df8}">
@@ -153,7 +153,6 @@
         <property name="dataType">
             <value>-2</value>
         </property>
-        <property name="value"/>
     </object>
     <object class="BoolPluginParameter" id="{31f0118c-cbb9-421a-9c4b-8f4bf68d5644}">
         <property name="name">
