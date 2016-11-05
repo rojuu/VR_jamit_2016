@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PickkableObject : MonoBehaviour
+public class PickableObject : MonoBehaviour
 {
     Rigidbody rb;
 
