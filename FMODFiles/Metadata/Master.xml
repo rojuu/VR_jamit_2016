@@ -16,9 +16,193 @@
     </object>
     <object class="MixerBusEffectChain" id="{c58e34d0-de7d-43e9-b799-a072f5e2746a}">
         <relationship name="effects">
+            <destination>{255af232-408e-4694-9dd7-47df2cdf64f0}</destination>
             <destination>{385b2523-34e3-4744-9e4d-41a6567abee3}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{94c05180-c82d-421d-8caa-27c4c2a96777}"/>
+    <object class="PluginEffect" id="{255af232-408e-4694-9dd7-47df2cdf64f0}">
+        <relationship name="plugin">
+            <destination>{6a789e38-4574-4d19-a712-de8ed28d9fbf}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{385b2523-34e3-4744-9e4d-41a6567abee3}"/>
+    <object class="Plugin" id="{6a789e38-4574-4d19-a712-de8ed28d9fbf}">
+        <property name="identifier">
+            <value>Oculus Spatial Reverb</value>
+        </property>
+        <relationship name="pluginParameters">
+            <destination>{53aeb034-4564-46fa-977e-99b95032ab75}</destination>
+            <destination>{b23b8118-3569-431d-a977-dc095e18df12}</destination>
+            <destination>{e8b60f3d-dbb3-445b-855f-7a2eefc8049c}</destination>
+            <destination>{21e3cbe6-0e30-4d9f-9b48-a52fd486a6d5}</destination>
+            <destination>{341b5438-dca7-4a9c-94aa-8375eb54bdf5}</destination>
+            <destination>{d8c7ebdd-03ef-4be0-b6fd-b5d8460711d5}</destination>
+            <destination>{2086306d-c215-4f1a-b389-619c7d217e50}</destination>
+            <destination>{c2972635-3ed4-45c7-9a77-ce78ad823315}</destination>
+            <destination>{c785a83b-9c4a-4519-afc2-7dec6ee3868a}</destination>
+            <destination>{009af6f7-e089-485b-a245-a4a358f768d1}</destination>
+            <destination>{638bc48c-36ef-44b8-9544-d0c9875089b7}</destination>
+            <destination>{2a34dcd7-848c-4f7a-8cf8-d836573e8acb}</destination>
+            <destination>{22efea5d-fe03-4b7b-80ca-df3fbc988579}</destination>
+            <destination>{76820820-ea55-4829-8d84-b47445d877ae}</destination>
+            <destination>{a7e81014-225f-4526-b304-ad53e4a16973}</destination>
+        </relationship>
+    </object>
+    <object class="BoolPluginParameter" id="{53aeb034-4564-46fa-977e-99b95032ab75}">
+        <property name="name">
+            <value>Refl. Engine</value>
+        </property>
+        <property name="value">
+            <value>true</value>
+        </property>
+    </object>
+    <object class="BoolPluginParameter" id="{b23b8118-3569-431d-a977-dc095e18df12}">
+        <property name="name">
+            <value>Reverb</value>
+        </property>
+        <property name="value">
+            <value>true</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{e8b60f3d-dbb3-445b-855f-7a2eefc8049c}">
+        <property name="name">
+            <value>Global Scale</value>
+        </property>
+        <property name="curve">
+            <value>LinearPiecewiseCurveStrategy{(-9.000000,0.001000)(-8.000000,0.002000)(-7.000000,0.005000)(-6.000000,0.010000)(-5.000000,0.020000)(-4.000000,0.050000)(-3.000000,0.100000)(-2.000000,0.200000)(-1.000000,0.500000)(0.000000,1.000000)(1.000000,2.000000)(2.000000,5.000000)(3.000000,10.000000)(4.000000,20.000000)(5.000000,50.000000)(6.000000,100.000000)(7.000000,200.000000)(8.000000,500.000000)(9.000000,1000.000000)}</value>
+        </property>
+        <property name="value">
+            <value>1</value>
+        </property>
+    </object>
+    <object class="BoolPluginParameter" id="{21e3cbe6-0e30-4d9f-9b48-a52fd486a6d5}">
+        <property name="name">
+            <value>Bypass All</value>
+        </property>
+        <property name="value">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{341b5438-dca7-4a9c-94aa-8375eb54bdf5}">
+        <property name="name">
+            <value>Room Width</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,200.000000)}</value>
+        </property>
+        <property name="value">
+            <value>20</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{d8c7ebdd-03ef-4be0-b6fd-b5d8460711d5}">
+        <property name="name">
+            <value>Room Height</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,200.000000)}</value>
+        </property>
+        <property name="value">
+            <value>40</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{2086306d-c215-4f1a-b389-619c7d217e50}">
+        <property name="name">
+            <value>Room Length</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,200.000000)}</value>
+        </property>
+        <property name="value">
+            <value>26</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{c2972635-3ed4-45c7-9a77-ce78ad823315}">
+        <property name="name">
+            <value>Refl. Left</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,0.970000)}</value>
+        </property>
+        <property name="value">
+            <value>0.25</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{c785a83b-9c4a-4519-afc2-7dec6ee3868a}">
+        <property name="name">
+            <value>Refl. Right</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,0.970000)}</value>
+        </property>
+        <property name="value">
+            <value>0.25</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{009af6f7-e089-485b-a245-a4a358f768d1}">
+        <property name="name">
+            <value>Refl. Up</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,0.970000)}</value>
+        </property>
+        <property name="value">
+            <value>0.5</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{638bc48c-36ef-44b8-9544-d0c9875089b7}">
+        <property name="name">
+            <value>Refl. Down</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,0.970000)}</value>
+        </property>
+        <property name="value">
+            <value>0.100000001</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{2a34dcd7-848c-4f7a-8cf8-d836573e8acb}">
+        <property name="name">
+            <value>Refl. Back</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,0.970000)}</value>
+        </property>
+        <property name="value">
+            <value>0.25</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{22efea5d-fe03-4b7b-80ca-df3fbc988579}">
+        <property name="name">
+            <value>Refl. Front</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,0.970000)}</value>
+        </property>
+        <property name="value">
+            <value>0.25</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{76820820-ea55-4829-8d84-b47445d877ae}">
+        <property name="name">
+            <value>Range Min</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
+        </property>
+        <property name="value">
+            <value>1</value>
+        </property>
+    </object>
+    <object class="FloatPluginParameter" id="{a7e81014-225f-4526-b304-ad53e4a16973}">
+        <property name="name">
+            <value>Range Max</value>
+        </property>
+        <property name="curve">
+            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
+        </property>
+        <property name="value">
+            <value>100</value>
+        </property>
+    </object>
 </objects>
