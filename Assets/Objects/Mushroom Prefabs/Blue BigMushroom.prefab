@@ -38,7 +38,7 @@ GameObject:
   - 33: {fileID: 33000013591856678}
   - 23: {fileID: 23000012294053762}
   m_Layer: 0
-  m_Name: Mushroom 2
+  m_Name: Blue BigMushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,7 +116,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 7
   m_Type: 2
-  m_Color: {r: 1, g: 0.71602434, b: 0.41176468, a: 1}
+  m_Color: {r: 0.41176468, g: 0.5618663, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 16.43
   m_SpotAngle: 30
