@@ -12,4 +12,14 @@ public class Collectable : MonoBehaviour {
 	void Update () {
 	
 	}
+
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.tag == "Player")
+        {
+            print("keräsit lapsen penikan");
+            Destroy(gameObject);
+        }
+    }
 }
