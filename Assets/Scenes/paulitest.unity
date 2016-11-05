@@ -432,7 +432,12 @@ Prefab:
     - target: {fileID: 20000010862976620, guid: 733cccf6080ab01499b75743541ccf39,
         type: 2}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20000010862976620, guid: 733cccf6080ab01499b75743541ccf39,
+        type: 2}
+      propertyPath: m_TargetDisplay
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 733cccf6080ab01499b75743541ccf39, type: 2}
@@ -479,12 +484,22 @@ Prefab:
     - target: {fileID: 20000013979911462, guid: 00c6b86237f50174eb52500526396e8d,
         type: 2}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 20000013979911462, guid: 00c6b86237f50174eb52500526396e8d,
         type: 2}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20000013979911462, guid: 00c6b86237f50174eb52500526396e8d,
+        type: 2}
+      propertyPath: m_TargetEye
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20000013979911462, guid: 00c6b86237f50174eb52500526396e8d,
+        type: 2}
+      propertyPath: m_TargetDisplay
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c6b86237f50174eb52500526396e8d, type: 2}
