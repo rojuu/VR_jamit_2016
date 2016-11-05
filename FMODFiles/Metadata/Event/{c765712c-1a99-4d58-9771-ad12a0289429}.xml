@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{c765712c-1a99-4d58-9771-ad12a0289429}">
         <property name="name">
-            <value>Footsteps</value>
+            <value>Player1_Footsteps</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -32,7 +32,7 @@
             <destination>{a5f3c37b-6e92-4927-a236-33fe7b4ba6ff}</destination>
         </relationship>
         <relationship name="folder">
-            <destination>{b9dad537-5bd3-46fe-ba7b-3a22a118efd4}</destination>
+            <destination>{9dc4646c-89ee-42de-9852-54609405cc2e}</destination>
         </relationship>
     </object>
     <object class="EventMixer" id="{0cd7c8ff-a0e6-4e93-b691-6a7e94f3644d}">
@@ -196,7 +196,6 @@
         <property name="dataType">
             <value>-2</value>
         </property>
-        <property name="value"/>
     </object>
     <object class="BoolPluginParameter" id="{29c7f579-e9e5-4a78-8baa-92e3efedd92c}">
         <property name="name">
