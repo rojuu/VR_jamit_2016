@@ -28,6 +28,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         //[SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         //[SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+		public GameObject footstepEmitter;
+
         public string HorizontalMovementInput;
         public string VerticalMovementInput;
 
@@ -170,7 +172,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
 
-			GetComponent<FMODUnity.StudioEventEmitter>().Play();
+			footstepEmitter.GetComponent<FMODUnity.StudioEventEmitter>().Play();
 
             //// pick & play a random footstep sound from the array,
             //// excluding sound at index 0
