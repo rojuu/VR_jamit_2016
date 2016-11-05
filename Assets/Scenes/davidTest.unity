@@ -101,7 +101,7 @@ GameObject:
   - 33: {fileID: 866522649}
   - 65: {fileID: 866522648}
   - 23: {fileID: 866522647}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,6 +237,33 @@ Prefab:
     - {fileID: 81000010719363000, guid: 733cccf6080ab01499b75743541ccf39, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 733cccf6080ab01499b75743541ccf39, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1069226551 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013585677124, guid: 733cccf6080ab01499b75743541ccf39,
+    type: 2}
+  m_PrefabInternal: {fileID: 1069226550}
+--- !u!114 &1069226553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069226551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Footsteps
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1087526811
 GameObject:
   m_ObjectHideFlags: 0
