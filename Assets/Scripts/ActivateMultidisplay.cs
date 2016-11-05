@@ -19,4 +19,13 @@ public class ActivateMultidisplay : MonoBehaviour
     {
 
     }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.tag == "Player1")
+        {
+            print("keräsit lapsen penikan");
+            Destroy(gameObject);
+        }
+    }
 }
