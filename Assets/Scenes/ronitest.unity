@@ -95,50 +95,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000012877485394, guid: 00c6b86237f50174eb52500526396e8d,
     type: 2}
   m_PrefabInternal: {fileID: 1494050987}
---- !u!1 &413238882 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013585677124, guid: 733cccf6080ab01499b75743541ccf39,
-    type: 2}
-  m_PrefabInternal: {fileID: 1388850211}
---- !u!114 &413238883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 413238882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: event:/SFX/Footsteps
-  PlayEvent: 0
-  StopEvent: 0
-  CollisionTag: 
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!1 &616398909 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000012369948082, guid: 733cccf6080ab01499b75743541ccf39,
-    type: 2}
-  m_PrefabInternal: {fileID: 1388850211}
---- !u!114 &616398910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 616398909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListenerNumber: 0
 --- !u!1 &866522646
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,18 +476,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 54000010011217584, guid: 733cccf6080ab01499b75743541ccf39,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 54000010011217584, guid: 733cccf6080ab01499b75743541ccf39,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 116
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 81000010719363000, guid: 733cccf6080ab01499b75743541ccf39, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 733cccf6080ab01499b75743541ccf39, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1494050987
