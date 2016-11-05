@@ -1,17 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(Camera))]
 public class Player : MonoBehaviour
 {
+    public GameObject rockTransform;
+    GameObject rock;
 
+    Camera cam;
     Rigidbody rb;
     CharacterController characterController;
     bool gameEnded = false;
+    bool canShoot;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         characterController = GetComponent<CharacterController>();
+        cam = GetComponentInChildren<Camera>();
     }
 
     // Update is called once per frame
@@ -22,6 +30,35 @@ public class Player : MonoBehaviour
             gameEnded = true;
             print("Player won");
         }
+
+        if (Input.GetButtonDown("Fire1") && canShoot)
+        {
+            canShoot = false;
+            rock.transform.SetParent(null);
+            Rigidbody rb = rock.GetComponent<Rigidbody>();
+            rb.isKinematic = false;
+            rb.AddForce(cam.transform.forward * 1000);
+            rock = null;
+        }
+
+        if (!Input.GetButton("Fire1") && rock != null)
+        {
+            canShoot = true;
+        }
+    }
+
+    public void PickUpRock(GameObject _rock)
+    {
+        if (rock != null)
+        {
+            return;
+        }
+
+        rock = _rock;
+
+        rock.GetComponent<Rigidbody>().isKinematic = true;
+        rock.transform.SetParent(rockTransform.transform);
+        rock.transform.localPosition = Vector3.zero;
     }
 
     void OnTriggerEnter(Collider col)
@@ -58,14 +95,14 @@ public class Player : MonoBehaviour
 
         float startForce = 0;
         float endForce = 30;
-        while(currentLerpTime < lerpTime)
+        while (currentLerpTime < lerpTime)
         {
             float t = currentLerpTime / lerpTime;
             t = Mathf.Cos(t * Mathf.PI * 0.5f);
             characterController.Move(knockBackDir * Mathf.Lerp(startForce, endForce, t) * Time.deltaTime);
 
             currentLerpTime += Time.deltaTime;
-            yield return null; 
+            yield return null;
         }
     }
 
