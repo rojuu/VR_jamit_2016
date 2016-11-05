@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{b85fbaa3-4ef7-4ff8-9069-aac3b4b5d77d}">
         <property name="name">
-            <value>New Event</value>
+            <value>asd</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -27,6 +27,9 @@
         </relationship>
         <relationship name="timeline">
             <destination>{dd62f237-512e-4bf3-bc82-e1afbeda64a6}</destination>
+        </relationship>
+        <relationship name="banks">
+            <destination>{a5f3c37b-6e92-4927-a236-33fe7b4ba6ff}</destination>
         </relationship>
         <relationship name="folder">
             <destination>{018e9278-a320-44ce-a97b-00cb324ca75d}</destination>
