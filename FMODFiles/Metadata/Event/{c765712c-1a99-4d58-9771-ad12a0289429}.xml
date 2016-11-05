@@ -199,14 +199,13 @@
         <property name="dataType">
             <value>-2</value>
         </property>
-        <property name="value"/>
     </object>
     <object class="BoolPluginParameter" id="{16876a23-77fb-4c31-a01d-ecaaf3863e55}">
         <property name="name">
             <value>Reflections</value>
         </property>
         <property name="value">
-            <value>false</value>
+            <value>true</value>
         </property>
     </object>
     <object class="BoolPluginParameter" id="{e3d363f5-5de3-4c04-ae11-9ff29302e56a}">
@@ -214,7 +213,7 @@
             <value>Attenuation</value>
         </property>
         <property name="value">
-            <value>false</value>
+            <value>true</value>
         </property>
     </object>
     <object class="FloatPluginParameter" id="{0c652cdb-c54c-469d-9131-b364850edc59}">
