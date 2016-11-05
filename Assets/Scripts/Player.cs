@@ -3,28 +3,38 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-    bool playerWon = false;
-    bool monsterWon = false;
+    Rigidbody rb;
+    bool gameEnded = false;
+
+    void Start()
+    {
+        rb = GetComponentInParent<Rigidbody>();
+    }
     
     // Update is called once per frame
 	void Update ()
     {
-	    if(GlobalVars.Instance.ChildCount >= GlobalVars.Instance.ChildMax && !monsterWon)
+	    if(GlobalVars.Instance.ChildCount >= GlobalVars.Instance.ChildMax && !gameEnded)
         {
-            playerWon = true;
+            gameEnded = true;
             print("Player won");
         }
 	}
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.tag == "Player2")
         {
-            if (--GlobalVars.Instance.PlayerHP <= 0 && !playerWon)
+            if (--GlobalVars.Instance.PlayerHP <= 0 && !gameEnded)
             {
-                monsterWon = true;
-                print("Monster won the game");
+                gameEnded = true;
             }
+
+            Vector3 knockBackDir = transform.position - col.transform.position;
+            knockBackDir.y = 0;
+            knockBackDir.Normalize();
+
+            rb.AddForce(knockBackDir * 10000, ForceMode.Impulse);
 
             StartCoroutine(Invicibility());
         }
@@ -37,8 +47,8 @@ public class Player : MonoBehaviour {
         SetInvicibility(false);
     }
 
-    void SetInvicibility(bool isInvicible)
+    void SetInvicibility(bool setInvicible)
     {
-
+        Physics.IgnoreLayerCollision(8, 9, setInvicible);
     }
 }
