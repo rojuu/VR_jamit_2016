@@ -16,7 +16,7 @@ MonoBehaviour:
   SourceProjectPath: FMODFiles\FMODFiles.fspro
   SourceBankPath: FMODFiles\Build
   AutomaticEventLoading: 1
-  AutomaticSampleLoading: 1
+  AutomaticSampleLoading: 0
   ImportType: 0
   TargetAssetPath: 
   SpeakerModeSettings:
@@ -53,6 +53,7 @@ MonoBehaviour:
     Value: 256
   - Platform: 2
     Value: 32
-  Plugins: []
+  Plugins:
+  - OculusSpatializerFMOD
   MasterBank: Master Bank
   Banks: []
