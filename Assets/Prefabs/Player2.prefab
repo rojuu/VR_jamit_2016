@@ -22,6 +22,7 @@ GameObject:
   - 20: {fileID: 20000013979911462}
   - 81: {fileID: 81000012715046862}
   - 124: {fileID: 124000012249249286}
+  - 114: {fileID: 114000012032370286}
   m_Layer: 9
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -98,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011576614924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.6, y: 0.4, z: -6.6}
+  m_LocalPosition: {x: -6.6, y: 0, z: -6.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -153,7 +154,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 59f887814a086c1418601151616b6444, type: 2}
+  - {fileID: 2100000, guid: 67e829f712aa1cd4ea5aec67e935d700, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -272,6 +273,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114000012032370286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010174253004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42241c33e76d45b43a440dfb487cdaef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NVColor: {r: 0, g: 1, b: 0.1724138, a: 0}
+  m_TargetBleachColor: {r: 0.42647058, g: 1, b: 0.45415825, a: 0}
+  m_baseLightingContribution: 0.0163
+  m_LightSensitivityMultiplier: 1.8
+  useVignetting: 1
 --- !u!114 &114000012101376962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -364,11 +381,6 @@ MonoBehaviour:
     BobDuration: 0.2
     BobAmount: 0.1
   m_StepInterval: 5
-  m_FootstepSounds:
-  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
-  m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
-  m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
   HorizontalMovementInput: Horizontal_P2
   VerticalMovementInput: Vertical_P2
 --- !u!124 &124000012249249286
