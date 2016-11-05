@@ -69,6 +69,18 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Ramp
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _BumpScale
@@ -87,19 +99,22 @@ Material:
       second: 1
     - first:
         name: _Glossiness
-      second: 0.717
+      second: 0.404
     - first:
         name: _GlossyReflections
       second: 1
     - first:
         name: _Metallic
-      second: 0.992
+      second: 0.424
     - first:
         name: _Mode
       second: 0
     - first:
         name: _OcclusionStrength
       second: 1
+    - first:
+        name: _Outline
+      second: 0.005
     - first:
         name: _Parallax
       second: 0.02
@@ -125,3 +140,9 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0.26519248, g: 0.2738002, b: 0.33088237, a: 1}
+    - first:
+        name: _OutlineColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SpecColor
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
