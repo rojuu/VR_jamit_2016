@@ -47,7 +47,7 @@ public class BabyScript : MonoBehaviour
 
         if(col.tag == "Player2")
         {
-            col.gameObject.GetComponent<Enemy>().Stun();
+            col.gameObject.GetComponentInParent<Enemy>().Stun();
         }
     }
 }
