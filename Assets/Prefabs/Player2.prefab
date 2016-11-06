@@ -42,6 +42,7 @@ GameObject:
   - 114: {fileID: 114000012101376962}
   - 54: {fileID: 54000010401593966}
   - 82: {fileID: 82000010176801032}
+  - 114: {fileID: 114000013324420606}
   m_Layer: 9
   m_Name: Player2
   m_TagString: Player2
@@ -596,6 +597,17 @@ MonoBehaviour:
   m_FootstepSounds: []
   HorizontalMovementInput: Horizontal_P2
   VerticalMovementInput: Vertical_P2
+--- !u!114 &114000013324420606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011576614924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6be1160cbd704140a104489e5b0c2e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!124 &124000012249249286
 Behaviour:
   m_ObjectHideFlags: 1
