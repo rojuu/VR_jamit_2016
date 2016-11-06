@@ -259,5 +259,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+
+        public void DisableMovement()
+        {
+            m_WalkSpeed = 0;
+            m_RunSpeed = 0;
+        }
+
+        public void EnableMovement()
+        {
+            m_WalkSpeed = 5;
+            m_RunSpeed = 10;
+        }
     }
 }
