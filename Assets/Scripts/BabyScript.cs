@@ -41,5 +41,10 @@ public class BabyScript : MonoBehaviour
             GlobalVars.Instance.ChildCount++;
             Destroy(gameObject);
         }
+
+        if(col.tag == "Player2")
+        {
+            col.gameObject.GetComponent<Enemy>().Stun();
+        }
     }
 }
