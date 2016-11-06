@@ -7,12 +7,10 @@ public class Enemy : MonoBehaviour {
     public List<GameObject> spawnPointList;
     public float minDistanceFromSpawnToPlayer = 30f;
     Player player;
-    Rigidbody rb;
 
     void Start()
     {
         player = FindObjectOfType<Player>();
-        rb.GetComponent<Rigidbody>();
     }
 
 	public void SpawnInRandomLocation()
