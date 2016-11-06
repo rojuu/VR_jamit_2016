@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Collectable : MonoBehaviour
 {
+	public AudioClip collected;
 
     // Use this for initialization
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -23,6 +23,7 @@ public class Collectable : MonoBehaviour
         if (col.tag == "Player")
         {
             print("keräsit lapsen penikan");
+			GetComponent<AudioSource>().PlayOneShot(collected);
             GlobalVars.Instance.ChildCount++;
             Destroy(gameObject);
         }
