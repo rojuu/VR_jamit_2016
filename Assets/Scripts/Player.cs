@@ -8,9 +8,10 @@ public class Player : MonoBehaviour
 {
     public GameObject rockTransform;
     GameObject rock;
+    Animator anim;
 
     Camera cam;
-    Rigidbody rb;
+    Rigidbody rigidBody;
     CharacterController characterController;
     bool gameEnded = false;
     bool canShoot;
@@ -19,10 +20,11 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rigidBody = GetComponent<Rigidbody>();
         characterController = GetComponent<CharacterController>();
         cam = GetComponentInChildren<Camera>();
         lightScript = GetComponentInChildren<Light>();
+        anim = gameObject.GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -53,6 +55,10 @@ public class Player : MonoBehaviour
         {
             lightScript.ToggleLight();
         }
+        
+        float magnitude = characterController.velocity.magnitude/10;
+        anim.SetFloat("Blend", magnitude);
+       
     }
 
     public void PickUpRock(GameObject _rock)
