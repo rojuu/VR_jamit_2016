@@ -646,7 +646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000013540143046
 GameObject:
   m_ObjectHideFlags: 1
@@ -1023,7 +1023,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011980138868}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.579, y: -0.012, z: 1.017}
+  m_LocalPosition: {x: 0.764, y: -0.252, z: 1.017}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1424,7 +1424,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012066599438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.23, z: 7.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 194.08899, z: 0}
   m_Children:
@@ -1902,6 +1902,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7694ced75223e224ea6768aca711bb47, type: 3}
   HorizontalMovementInput: Horizontal
   VerticalMovementInput: Vertical
+  sprintButton: Sprint
 --- !u!114 &114000011710042712
 MonoBehaviour:
   m_ObjectHideFlags: 1

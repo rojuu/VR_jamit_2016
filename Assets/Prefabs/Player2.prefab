@@ -1168,7 +1168,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011576614924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.6, y: 0.25, z: -6.6}
+  m_LocalPosition: {x: 0.1, y: 0.12702179, z: -9.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1919,6 +1919,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7694ced75223e224ea6768aca711bb47, type: 3}
   HorizontalMovementInput: Horizontal_P2
   VerticalMovementInput: Vertical_P2
+  sprintButton: Sprint_P2
 --- !u!114 &114000013324420606
 MonoBehaviour:
   m_ObjectHideFlags: 1
