@@ -15,11 +15,14 @@ public class Player : MonoBehaviour
     bool gameEnded = false;
     bool canShoot;
 
+    Light lightScript;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         characterController = GetComponent<CharacterController>();
         cam = GetComponentInChildren<Camera>();
+        lightScript = GetComponentInChildren<Light>();
     }
 
     // Update is called once per frame
@@ -44,6 +47,11 @@ public class Player : MonoBehaviour
         if (!Input.GetButton("Fire1") && rock != null)
         {
             canShoot = true;
+        }
+
+        if(Input.GetButtonDown("Jump") && lightScript != null)
+        {
+            lightScript.ToggleLight();
         }
     }
 
