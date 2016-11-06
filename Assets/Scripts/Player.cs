@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
             lightScript.ToggleLight();
         }
         
-        float magnitude = characterController.velocity.magnitude/10;
+        float magnitude = characterController.velocity.magnitude/10*2;
         anim.SetFloat("Blend", magnitude);
        
     }
