@@ -4,6 +4,7 @@ using System.Collections;
 public class BabyScript : MonoBehaviour
 {
     Rigidbody rb;
+	AudioSource ac;
     public GameObject beacon;
 	public AudioClip saved;
 
@@ -11,6 +12,7 @@ public class BabyScript : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+		ac = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,12 +32,15 @@ public class BabyScript : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        //if (col.tag == "Player")
-        //{
-        //    print("keräsit lapsen penikan");
-        //    GlobalVars.Instance.ChildCount++;
-        //    Destroy(gameObject);
-        //}
+        if (col.tag == "Player")
+        {
+			ac.enabled = false;
+			/*
+            print("keräsit lapsen penikan");
+            GlobalVars.Instance.ChildCount++;
+            Destroy(gameObject);
+            */
+        }
 
         if (col.tag == "Home")
         {
@@ -50,4 +55,12 @@ public class BabyScript : MonoBehaviour
             col.gameObject.GetComponentInParent<Enemy>().Stun();
         }
     }
+
+	void OnTriggerExit(Collider col)
+	{
+		if (col.tag == "Player")
+		{
+			ac.enabled = true;
+		}
+	}
 }
