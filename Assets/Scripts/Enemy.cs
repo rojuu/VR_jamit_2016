@@ -33,5 +33,8 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    public void Stun();
+    public void Stun()
+    {
+
+    }
 }
