@@ -739,6 +739,7 @@ GameObject:
   - 4: {fileID: 4000013536215696}
   - 33: {fileID: 33000010371450848}
   - 23: {fileID: 23000012815179750}
+  - 114: {fileID: 114000013180268120}
   m_Layer: 0
   m_Name: kristallilyhty
   m_TagString: Untagged
@@ -1180,6 +1181,7 @@ GameObject:
   - 20: {fileID: 20000011800797184}
   - 124: {fileID: 124000013567393198}
   - 114: {fileID: 114000012697349310}
+  - 81: {fileID: 81000010693581856}
   m_Layer: 8
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -3012,6 +3014,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!81 &81000010693581856
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013564484522}
+  m_Enabled: 1
 --- !u!95 &95000011291386316
 Animator:
   serializedVersion: 3
@@ -3285,6 +3294,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: 0
+--- !u!114 &114000013180268120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012062003882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755123825ebdf1846924b20b84b975d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightObject: {fileID: 1000011091005384}
 --- !u!124 &124000013567393198
 Behaviour:
   m_ObjectHideFlags: 1
