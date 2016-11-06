@@ -76,7 +76,16 @@ public class Enemy : MonoBehaviour
         if (controller != null)
         {
             controller.DisableMovement();
-            yield return new WaitForSeconds(3);
+
+            float timer = 0;
+
+            Vector3 orgPos = transform.position;
+            while (timer < 3)
+            { 
+                timer += Time.deltaTime;
+                transform.position = orgPos + Random.insideUnitSphere;
+                yield return null;
+            }
             controller.EnableMovement();
         }
     }
