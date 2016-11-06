@@ -40,14 +40,10 @@ public class BabyScript : MonoBehaviour
         if (col.tag == "Home")
         {
             GlobalVars.Instance.ChildCount++;
-			GetComponent<AudioSource>().PlayOneShot(saved, 1.0F);
-			GetComponent<Renderer>().enabled = false;
-			Destroy(gameObject, saved.length);
+            GetComponent<AudioSource>().PlayOneShot(saved, 1.0F);
+            GetComponent<Renderer>().enabled = false;
+            Destroy(gameObject, saved.length);
         }
 
-        if(col.tag == "Player2")
-        {
-            col.gameObject.GetComponentInParent<Enemy>().Stun();
-        }
     }
 }

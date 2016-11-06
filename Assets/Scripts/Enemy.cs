@@ -66,6 +66,7 @@ public class Enemy : MonoBehaviour
 
     public void Stun()
     {
+        print("stunned");
         StartCoroutine(InternalStun());
     }
 

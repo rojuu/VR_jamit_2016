@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
             Rigidbody rb = rock.GetComponent<Rigidbody>();
             rb.isKinematic = false;
             rb.AddForce(cam.transform.forward * 1000);
+            rock.GetComponent<PickableObject>().canDoDamage = true;
             rock = null;
         }
 
