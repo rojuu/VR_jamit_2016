@@ -44,5 +44,10 @@ public class BabyScript : MonoBehaviour
 			GetComponent<Renderer>().enabled = false;
 			Destroy(gameObject, saved.length);
         }
+
+        if(col.tag == "Player2")
+        {
+            col.gameObject.GetComponent<Enemy>().Stun();
+        }
     }
 }
