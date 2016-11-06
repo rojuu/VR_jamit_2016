@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class Enemy : MonoBehaviour {
 
@@ -55,6 +56,17 @@ public class Enemy : MonoBehaviour {
 
     public void Stun()
     {
+        StartCoroutine(InternalStun());   
+    }
 
+    IEnumerator InternalStun()
+    {
+        FirstPersonController controller = GetComponent<FirstPersonController>();
+        if (controller != null)
+        {
+            controller.DisableMovement();
+            yield return new WaitForSeconds(3);
+            controller.EnableMovement();
+        }
     }
 }
