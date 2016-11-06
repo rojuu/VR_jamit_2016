@@ -1046,7 +1046,7 @@ Light:
   serializedVersion: 7
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.12
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2247,7 +2247,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012877485394, guid: 00c6b86237f50174eb52500526396e8d, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c6b86237f50174eb52500526396e8d, type: 2}
@@ -4050,7 +4050,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4684707cd9fa4c14ba5c2740d16cad15, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4684707cd9fa4c14ba5c2740d16cad15, type: 3}
       propertyPath: m_LocalScale.x
@@ -19167,7 +19167,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011656250324, guid: 733cccf6080ab01499b75743541ccf39, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4000011656250324, guid: 733cccf6080ab01499b75743541ccf39, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -31527,7 +31527,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014144695256, guid: 4b13c147231c01541837ca177c5103ff, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4000014144695256, guid: 4b13c147231c01541837ca177c5103ff, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
