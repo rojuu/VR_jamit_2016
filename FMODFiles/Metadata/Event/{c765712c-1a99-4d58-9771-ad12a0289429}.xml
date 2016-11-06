@@ -5,7 +5,7 @@
             <value>Player1_Footsteps</value>
         </property>
         <property name="outputFormat">
-            <value>1</value>
+            <value>2</value>
         </property>
         <relationship name="mixer">
             <destination>{0cd7c8ff-a0e6-4e93-b691-6a7e94f3644d}</destination>
@@ -73,7 +73,7 @@
     </object>
     <object class="EventMixerMaster" id="{794aea7b-32c8-4375-8955-2e6a4e1c458f}">
         <property name="volume">
-            <value>10</value>
+            <value>-0.5</value>
         </property>
         <relationship name="effectChain">
             <destination>{fb92a705-b91a-48d2-b1d5-c61e6cfc0cf5}</destination>
@@ -115,9 +115,6 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{b7f82b9f-e21c-488e-b756-fb028cbda1e6}">
-        <property name="volume">
-            <value>10</value>
-        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>
@@ -134,7 +131,7 @@
     <object class="MixerBusEffectChain" id="{fb92a705-b91a-48d2-b1d5-c61e6cfc0cf5}">
         <relationship name="effects">
             <destination>{1e638102-5078-46ee-8080-dc77e06dbe06}</destination>
-            <destination>{7dfe25e0-ea38-41d9-b3aa-9717c75d713f}</destination>
+            <destination>{e7569332-7091-4130-9ae1-d5058b85a298}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{ccab4e9e-efaa-4b59-93bd-a007562bd31e}"/>
@@ -177,68 +174,6 @@
     </object>
     <object class="MixerBusPanner" id="{acfc71bb-476f-4c74-8770-2f883bb126e3}"/>
     <object class="MixerBusFader" id="{1e638102-5078-46ee-8080-dc77e06dbe06}"/>
-    <object class="PluginEffect" id="{7dfe25e0-ea38-41d9-b3aa-9717c75d713f}">
-        <relationship name="plugin">
-            <destination>{ddf737dc-6b52-4ed1-8042-a049ef67a848}</destination>
-        </relationship>
-    </object>
+    <object class="SpatialiserEffect" id="{e7569332-7091-4130-9ae1-d5058b85a298}"/>
     <object class="MixerBusFader" id="{0b6abd28-db81-4d12-936e-1d36b1c7b4cd}"/>
-    <object class="Plugin" id="{ddf737dc-6b52-4ed1-8042-a049ef67a848}">
-        <property name="identifier">
-            <value>Oculus Spatializer</value>
-        </property>
-        <relationship name="pluginParameters">
-            <destination>{4c390ee1-6acd-4e77-bb63-074a27916610}</destination>
-            <destination>{16876a23-77fb-4c31-a01d-ecaaf3863e55}</destination>
-            <destination>{e3d363f5-5de3-4c04-ae11-9ff29302e56a}</destination>
-            <destination>{0c652cdb-c54c-469d-9131-b364850edc59}</destination>
-            <destination>{b6b7840c-543d-4a05-b23e-7465da418b30}</destination>
-        </relationship>
-    </object>
-    <object class="DataPluginParameter" id="{4c390ee1-6acd-4e77-bb63-074a27916610}">
-        <property name="name">
-            <value>3D Attributes</value>
-        </property>
-        <property name="dataType">
-            <value>-2</value>
-        </property>
-    </object>
-    <object class="BoolPluginParameter" id="{16876a23-77fb-4c31-a01d-ecaaf3863e55}">
-        <property name="name">
-            <value>Reflections</value>
-        </property>
-        <property name="value">
-            <value>true</value>
-        </property>
-    </object>
-    <object class="BoolPluginParameter" id="{e3d363f5-5de3-4c04-ae11-9ff29302e56a}">
-        <property name="name">
-            <value>Attenuation</value>
-        </property>
-        <property name="value">
-            <value>true</value>
-        </property>
-    </object>
-    <object class="FloatPluginParameter" id="{0c652cdb-c54c-469d-9131-b364850edc59}">
-        <property name="name">
-            <value>Range Min</value>
-        </property>
-        <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
-        </property>
-        <property name="value">
-            <value>1</value>
-        </property>
-    </object>
-    <object class="FloatPluginParameter" id="{b6b7840c-543d-4a05-b23e-7465da418b30}">
-        <property name="name">
-            <value>Range Max</value>
-        </property>
-        <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
-        </property>
-        <property name="value">
-            <value>100</value>
-        </property>
-    </object>
 </objects>

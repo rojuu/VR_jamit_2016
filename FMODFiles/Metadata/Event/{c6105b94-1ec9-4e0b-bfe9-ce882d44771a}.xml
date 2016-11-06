@@ -5,7 +5,7 @@
             <value>Player2_Footsteps</value>
         </property>
         <property name="outputFormat">
-            <value>1</value>
+            <value>2</value>
         </property>
         <relationship name="mixer">
             <destination>{6b36d33c-3a87-43ef-840f-bfc7167b3565}</destination>
@@ -176,7 +176,7 @@
     <object class="MixerBusEffectChain" id="{633783c2-2b7b-4cbd-af0c-9d1ef3573e85}">
         <relationship name="effects">
             <destination>{75a0cd5f-c986-4862-b75f-ce8fa1ed7bbe}</destination>
-            <destination>{cb6b82b8-c6ad-4587-8187-c2dd33b5047d}</destination>
+            <destination>{f1d8a9a2-dbeb-4e54-8d63-2b9b59fb9e7e}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{1429a575-57d1-4470-8f8e-d2f84f068862}"/>
@@ -241,69 +241,7 @@
     </object>
     <object class="MixerBusPanner" id="{6ad2dd76-de65-448c-922f-b21262149a3e}"/>
     <object class="MixerBusFader" id="{75a0cd5f-c986-4862-b75f-ce8fa1ed7bbe}"/>
-    <object class="PluginEffect" id="{cb6b82b8-c6ad-4587-8187-c2dd33b5047d}">
-        <relationship name="plugin">
-            <destination>{399823d7-7ba2-45b9-b7fe-8c9e3571f763}</destination>
-        </relationship>
-    </object>
+    <object class="SpatialiserEffect" id="{f1d8a9a2-dbeb-4e54-8d63-2b9b59fb9e7e}"/>
     <object class="MixerBusFader" id="{6c0ff04a-d1c3-4cb7-9812-1b1ae6d8ceae}"/>
     <object class="MixerBusFader" id="{680ab629-841e-480f-87ff-13248e5438b8}"/>
-    <object class="Plugin" id="{399823d7-7ba2-45b9-b7fe-8c9e3571f763}">
-        <property name="identifier">
-            <value>Oculus Spatializer</value>
-        </property>
-        <relationship name="pluginParameters">
-            <destination>{3de1cd98-98f6-4181-966b-6200640bdb48}</destination>
-            <destination>{a7c099f9-5d44-44ef-bc58-f3f2b8fcd8dd}</destination>
-            <destination>{6b2859b0-b409-4bcb-b8cd-744fc65b60be}</destination>
-            <destination>{acb48ea7-816f-4025-9530-54cb23ead562}</destination>
-            <destination>{8b3e8be1-8dac-4142-a44c-96dae3c00d6e}</destination>
-        </relationship>
-    </object>
-    <object class="DataPluginParameter" id="{3de1cd98-98f6-4181-966b-6200640bdb48}">
-        <property name="name">
-            <value>3D Attributes</value>
-        </property>
-        <property name="dataType">
-            <value>-2</value>
-        </property>
-    </object>
-    <object class="BoolPluginParameter" id="{a7c099f9-5d44-44ef-bc58-f3f2b8fcd8dd}">
-        <property name="name">
-            <value>Reflections</value>
-        </property>
-        <property name="value">
-            <value>true</value>
-        </property>
-    </object>
-    <object class="BoolPluginParameter" id="{6b2859b0-b409-4bcb-b8cd-744fc65b60be}">
-        <property name="name">
-            <value>Attenuation</value>
-        </property>
-        <property name="value">
-            <value>true</value>
-        </property>
-    </object>
-    <object class="FloatPluginParameter" id="{acb48ea7-816f-4025-9530-54cb23ead562}">
-        <property name="name">
-            <value>Range Min</value>
-        </property>
-        <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
-        </property>
-        <property name="value">
-            <value>1</value>
-        </property>
-    </object>
-    <object class="FloatPluginParameter" id="{8b3e8be1-8dac-4142-a44c-96dae3c00d6e}">
-        <property name="name">
-            <value>Range Max</value>
-        </property>
-        <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
-        </property>
-        <property name="value">
-            <value>100</value>
-        </property>
-    </object>
 </objects>
