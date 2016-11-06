@@ -5,7 +5,7 @@
             <value>LittleOnes_Noise</value>
         </property>
         <property name="outputFormat">
-            <value>1</value>
+            <value>2</value>
         </property>
         <relationship name="mixer">
             <destination>{8f1de6f7-cd75-4b65-b2ef-6007f58ae09e}</destination>
@@ -109,6 +109,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{0f86ad30-374f-4783-9485-4bc155d68e21}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>
@@ -139,7 +142,7 @@
     <object class="MixerBusEffectChain" id="{e6e74701-4cef-43d6-8108-98dcc1375747}">
         <relationship name="effects">
             <destination>{f8e54aef-3f9f-4c2a-922d-a1c05a0ab9e9}</destination>
-            <destination>{ca97554c-d584-45b2-8f25-4b71e724e146}</destination>
+            <destination>{c9b2ccb9-1547-4663-b28f-39778ddaeac0}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{5072ebda-0dea-4fd8-8f91-c5ee0e78f532}"/>
@@ -182,69 +185,6 @@
     </object>
     <object class="MixerBusPanner" id="{adda1701-a050-478e-82c3-8ca83c602e99}"/>
     <object class="MixerBusFader" id="{f8e54aef-3f9f-4c2a-922d-a1c05a0ab9e9}"/>
-    <object class="PluginEffect" id="{ca97554c-d584-45b2-8f25-4b71e724e146}">
-        <relationship name="plugin">
-            <destination>{9c32a250-5619-404e-9317-62e87dbe081a}</destination>
-        </relationship>
-    </object>
+    <object class="SpatialiserEffect" id="{c9b2ccb9-1547-4663-b28f-39778ddaeac0}"/>
     <object class="MixerBusFader" id="{b6e3cef0-d5c3-4ff2-9a58-f5947fb4ec5d}"/>
-    <object class="Plugin" id="{9c32a250-5619-404e-9317-62e87dbe081a}">
-        <property name="identifier">
-            <value>Oculus Spatializer</value>
-        </property>
-        <relationship name="pluginParameters">
-            <destination>{217a89f6-f316-4ebe-8975-ee11a4b00928}</destination>
-            <destination>{6c65c2d3-154c-46c5-801a-28b2da605601}</destination>
-            <destination>{f373f622-4d66-455c-97c6-696b6431ac05}</destination>
-            <destination>{e075fabb-0b82-4e9e-bb31-70557cbf0bec}</destination>
-            <destination>{3a7534bc-ac1e-43dd-bc81-6c8e211b56ab}</destination>
-        </relationship>
-    </object>
-    <object class="DataPluginParameter" id="{217a89f6-f316-4ebe-8975-ee11a4b00928}">
-        <property name="name">
-            <value>3D Attributes</value>
-        </property>
-        <property name="dataType">
-            <value>-2</value>
-        </property>
-        <property name="value"/>
-    </object>
-    <object class="BoolPluginParameter" id="{6c65c2d3-154c-46c5-801a-28b2da605601}">
-        <property name="name">
-            <value>Reflections</value>
-        </property>
-        <property name="value">
-            <value>true</value>
-        </property>
-    </object>
-    <object class="BoolPluginParameter" id="{f373f622-4d66-455c-97c6-696b6431ac05}">
-        <property name="name">
-            <value>Attenuation</value>
-        </property>
-        <property name="value">
-            <value>true</value>
-        </property>
-    </object>
-    <object class="FloatPluginParameter" id="{e075fabb-0b82-4e9e-bb31-70557cbf0bec}">
-        <property name="name">
-            <value>Range Min</value>
-        </property>
-        <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
-        </property>
-        <property name="value">
-            <value>1</value>
-        </property>
-    </object>
-    <object class="FloatPluginParameter" id="{3a7534bc-ac1e-43dd-bc81-6c8e211b56ab}">
-        <property name="name">
-            <value>Range Max</value>
-        </property>
-        <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
-        </property>
-        <property name="value">
-            <value>100</value>
-        </property>
-    </object>
 </objects>
