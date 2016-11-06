@@ -37,6 +37,7 @@ GameObject:
   - 4: {fileID: 4000010327804044}
   - 33: {fileID: 33000013591856678}
   - 23: {fileID: 23000012294053762}
+  - 136: {fileID: 136000012712637642}
   m_Layer: 0
   m_Name: Purple BigMushroom
   m_TagString: Untagged
@@ -50,10 +51,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013564985344}
-  m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
-  m_LocalPosition: {x: 28.388, y: -0.08, z: -2.83}
-  m_LocalScale: {x: 257.4376, y: 257.43753, z: 257.43753}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.6788979, y: -0.027893273, z: -0.028345773, w: 0.73315495}
+  m_LocalPosition: {x: -111.4, y: 0.53, z: -27.64}
+  m_LocalScale: {x: 143.09872, y: 143.09868, z: 143.09868}
+  m_LocalEulerAnglesHint: {x: -94.419, y: 178.25, z: -182.678}
   m_Children:
   - {fileID: 4000011142641548}
   m_Father: {fileID: 0}
@@ -141,3 +142,16 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!136 &136000012712637642
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013564985344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.006
+  m_Height: 0.03
+  m_Direction: 2
+  m_Center: {x: -0.029284114, y: 0.0000000146829775, z: 0.01}
