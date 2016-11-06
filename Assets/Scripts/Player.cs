@@ -77,10 +77,16 @@ public class Player : MonoBehaviour
             {
                 gameEnded = true;
             }
-
+            
             Vector3 knockBackDir = transform.position - col.transform.position;
             knockBackDir.y = 0;
             knockBackDir.Normalize();
+
+            try
+            {
+                FindObjectOfType<Enemy>().SpawnInRandomLocation();
+            }
+            catch { }
 
             //rb.AddForce(knockBackDir * 100, ForceMode.Impulse);
             StartCoroutine(KnockBack(knockBackDir));
