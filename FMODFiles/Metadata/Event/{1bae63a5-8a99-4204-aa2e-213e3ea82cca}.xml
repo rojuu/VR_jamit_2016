@@ -5,7 +5,7 @@
             <value>Player2_Monster</value>
         </property>
         <property name="outputFormat">
-            <value>1</value>
+            <value>2</value>
         </property>
         <relationship name="mixer">
             <destination>{c389d1a8-8930-41ea-96be-974674067279}</destination>
@@ -27,9 +27,6 @@
         </relationship>
         <relationship name="timeline">
             <destination>{c0ba0011-914a-4e98-a4e5-8757b91bf9fa}</destination>
-        </relationship>
-        <relationship name="parameters">
-            <destination>{607b4c44-8342-4b93-b719-fe95ac04df2d}</destination>
         </relationship>
         <relationship name="banks">
             <destination>{a5f3c37b-6e92-4927-a236-33fe7b4ba6ff}</destination>
@@ -80,14 +77,6 @@
             <destination>{692c482e-4666-43af-81cf-36f0ec3fc356}</destination>
         </relationship>
     </object>
-    <object class="DistanceParameter" id="{607b4c44-8342-4b93-b719-fe95ac04df2d}">
-        <property name="maximum">
-            <value>100</value>
-        </property>
-        <relationship name="automationCurves">
-            <destination>{b80cfd0e-f468-4b09-a6fd-0101f2c72893}</destination>
-        </relationship>
-    </object>
     <object class="EventMixerMaster" id="{1fbf8044-0cac-45ac-bd91-c5f4b61af9cb}">
         <relationship name="effectChain">
             <destination>{c70d1add-c087-498f-ace0-4c1831f1e1bc}</destination>
@@ -109,9 +98,6 @@
         <property name="nameOfPropertyBeingAutomated">
             <value>triggerProbability</value>
         </property>
-        <relationship name="automationCurves">
-            <destination>{b80cfd0e-f468-4b09-a6fd-0101f2c72893}</destination>
-        </relationship>
         <relationship name="objectBeingAutomated">
             <destination>{aea33276-a4ca-4b57-998f-1b3afbc623b7}</destination>
         </relationship>
@@ -178,16 +164,10 @@
             <destination>{96da5356-bb9f-45a4-910e-90aa0df0971d}</destination>
         </relationship>
     </object>
-    <object class="AutomationCurve" id="{b80cfd0e-f468-4b09-a6fd-0101f2c72893}">
-        <relationship name="automationPoints">
-            <destination>{f0115fdc-1e5e-445e-bc18-ea496bfa0b06}</destination>
-            <destination>{a941e89d-d54a-4695-93e1-30d7f238f74d}</destination>
-        </relationship>
-    </object>
     <object class="MixerBusEffectChain" id="{c70d1add-c087-498f-ace0-4c1831f1e1bc}">
         <relationship name="effects">
             <destination>{3da9263b-925b-4bfb-9628-a66e9cba9e5c}</destination>
-            <destination>{0e39c80c-3ac7-4533-883b-a65d7d9f5357}</destination>
+            <destination>{ad190c33-fb66-4eaf-a99b-8d4b4c6ed6ab}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{49149db6-331e-46f2-8b8e-559dcf33f92d}"/>
@@ -258,89 +238,7 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{5f0f7bab-8c5c-41f2-b69e-19e54ccf7442}"/>
-    <object class="AutomationPoint" id="{f0115fdc-1e5e-445e-bc18-ea496bfa0b06}">
-        <property name="position">
-            <value>0</value>
-        </property>
-        <property name="value">
-            <value>0</value>
-        </property>
-        <property name="curveShape">
-            <value>-0.350438058</value>
-        </property>
-    </object>
-    <object class="AutomationPoint" id="{a941e89d-d54a-4695-93e1-30d7f238f74d}">
-        <property name="position">
-            <value>100</value>
-        </property>
-        <property name="value">
-            <value>100</value>
-        </property>
-    </object>
     <object class="MixerBusFader" id="{3da9263b-925b-4bfb-9628-a66e9cba9e5c}"/>
-    <object class="PluginEffect" id="{0e39c80c-3ac7-4533-883b-a65d7d9f5357}">
-        <relationship name="plugin">
-            <destination>{e7237912-8f1b-41e3-a6b3-adfa574cfc00}</destination>
-        </relationship>
-    </object>
+    <object class="SpatialiserEffect" id="{ad190c33-fb66-4eaf-a99b-8d4b4c6ed6ab}"/>
     <object class="MixerBusFader" id="{1e016057-cb3d-423d-ad40-32e75f82f074}"/>
-    <object class="Plugin" id="{e7237912-8f1b-41e3-a6b3-adfa574cfc00}">
-        <property name="identifier">
-            <value>Oculus Spatializer</value>
-        </property>
-        <relationship name="pluginParameters">
-            <destination>{d441ed4f-f6bf-4899-8045-e57f127d0d6d}</destination>
-            <destination>{938c01f4-619b-4d02-8244-f6a453f6d386}</destination>
-            <destination>{045862e3-3efb-429f-925a-98281d1c44a7}</destination>
-            <destination>{6c2c96af-9e47-415f-bead-cead53b2f3d9}</destination>
-            <destination>{0e3ade17-203d-414a-9cec-f43746bb27dd}</destination>
-        </relationship>
-    </object>
-    <object class="DataPluginParameter" id="{d441ed4f-f6bf-4899-8045-e57f127d0d6d}">
-        <property name="name">
-            <value>3D Attributes</value>
-        </property>
-        <property name="dataType">
-            <value>-2</value>
-        </property>
-        <property name="value"/>
-    </object>
-    <object class="BoolPluginParameter" id="{938c01f4-619b-4d02-8244-f6a453f6d386}">
-        <property name="name">
-            <value>Reflections</value>
-        </property>
-        <property name="value">
-            <value>true</value>
-        </property>
-    </object>
-    <object class="BoolPluginParameter" id="{045862e3-3efb-429f-925a-98281d1c44a7}">
-        <property name="name">
-            <value>Attenuation</value>
-        </property>
-        <property name="value">
-            <value>true</value>
-        </property>
-    </object>
-    <object class="FloatPluginParameter" id="{6c2c96af-9e47-415f-bead-cead53b2f3d9}">
-        <property name="name">
-            <value>Range Min</value>
-        </property>
-        <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
-        </property>
-        <property name="value">
-            <value>1</value>
-        </property>
-    </object>
-    <object class="FloatPluginParameter" id="{0e3ade17-203d-414a-9cec-f43746bb27dd}">
-        <property name="name">
-            <value>Range Max</value>
-        </property>
-        <property name="curve">
-            <value>LinearCurveStrategy{(0.000000,0.000000)(1.000000,10000.000000)}</value>
-        </property>
-        <property name="value">
-            <value>100</value>
-        </property>
-    </object>
 </objects>
