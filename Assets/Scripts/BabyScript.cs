@@ -5,6 +5,7 @@ public class BabyScript : MonoBehaviour
 {
     Rigidbody rb;
     public GameObject beacon;
+	public AudioClip saved;
 
     // Use this for initialization
     void Start()
@@ -39,7 +40,9 @@ public class BabyScript : MonoBehaviour
         if (col.tag == "Home")
         {
             GlobalVars.Instance.ChildCount++;
-            Destroy(gameObject);
+			GetComponent<AudioSource>().PlayOneShot(saved, 1.0F);
+			GetComponent<Renderer>().enabled = false;
+			Destroy(gameObject, saved.length);
         }
 
         if(col.tag == "Player2")

@@ -2229,7 +2229,7 @@ Prefab:
     - target: {fileID: 114000013324420606, guid: 00c6b86237f50174eb52500526396e8d,
         type: 2}
       propertyPath: spawnPointList.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4000012877485394, guid: 00c6b86237f50174eb52500526396e8d, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2263,6 +2263,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013324420606, guid: 00c6b86237f50174eb52500526396e8d,
+        type: 2}
+      propertyPath: spawnPointList.Array.data[0]
+      value: 
+      objectReference: {fileID: 277534493}
+    - target: {fileID: 114000013324420606, guid: 00c6b86237f50174eb52500526396e8d,
+        type: 2}
+      propertyPath: spawnPointList.Array.data[1]
+      value: 
+      objectReference: {fileID: 150966314}
+    - target: {fileID: 114000013324420606, guid: 00c6b86237f50174eb52500526396e8d,
+        type: 2}
+      propertyPath: spawnPointList.Array.data[2]
+      value: 
+      objectReference: {fileID: 1010578965}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c6b86237f50174eb52500526396e8d, type: 2}
   m_IsPrefabParent: 0

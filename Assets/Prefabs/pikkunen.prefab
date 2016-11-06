@@ -217,7 +217,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 75
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -316,6 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beacon: {fileID: 1000012825428590}
+  saved: {fileID: 8300000, guid: e271bf988437b2448b4ccf6f96768e72, type: 3}
 --- !u!114 &114000012946666634
 MonoBehaviour:
   m_ObjectHideFlags: 1
