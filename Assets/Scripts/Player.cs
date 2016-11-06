@@ -98,6 +98,8 @@ public class Player : MonoBehaviour
             StartCoroutine(KnockBack(knockBackDir));
 
             StartCoroutine(Invicibility());
+
+            anim.SetTrigger("TakeDamage");
         }
     }
 

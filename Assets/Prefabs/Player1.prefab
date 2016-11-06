@@ -1794,7 +1794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755123825ebdf1846924b20b84b975d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightObject: {fileID: 56855712}
+  lightObject: {fileID: 1000012392833650}
 --- !u!114 &114000012303339478
 MonoBehaviour:
   m_ObjectHideFlags: 1
